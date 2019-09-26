@@ -18,7 +18,7 @@ First of all, you need get your secret Keys include “Client ID” &
 2. Click “Send the Keys to secure mailbox”.
 3. Check the mail with Keys in your secure mailbox.
 
-.. figure:: img/seed-pic1.png
+.. figure:: ../img/seed-pic1.png
    :scale: 70 %
    :alt: picture 1
 
@@ -32,7 +32,7 @@ from IPs in the whitelist are approved.
 2. Click the edit button next to “IP whitelist” box.
 3. Input your IPs, separated multiple IP records by line break, and up to 10 records.
 
-.. figure:: img/seed-pic2.png
+.. figure:: ../img/seed-pic2.png
    :scale: 70 %
    :alt: picture 2
 
