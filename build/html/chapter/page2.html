@@ -140,66 +140,54 @@
             
   <div class="section" id="guides-of-syncing-the-seeds-to-ad-media">
 <h1>Guides of Syncing the Seeds to Ad Media<a class="headerlink" href="#guides-of-syncing-the-seeds-to-ad-media" title="Permalink to this headline">¶</a></h1>
-<p>Now you can sync your High Ad-Value Audiences data (hereafter called
-“Seeds”) to the specified ad media for user-targeted promotion.
-Currently, only Facebook ad accounts are supported as sync targets. The
-Seeds can be synced to specified Facebook ad accounts as “Ad Audience”.</p>
+<p>Now you can sync your High Ad-Value Audiences data (hereafter called”Seeds”) to the specified ad media for user-targeted promotion.</p>
+<p>Currently, only Facebook ad accounts are supported as sync targets. The Seeds can be synced to specified Facebook ad accounts as “Ad Audience”.</p>
 <div class="section" id="facebook-client-oauth">
 <h2>Facebook Client OAuth<a class="headerlink" href="#facebook-client-oauth" title="Permalink to this headline">¶</a></h2>
-<p>First of all, you need to authorize “Client OAuth” of your developer
-account to UPLTV. When using this feature at the first time, you will
-find an “Authorize Facebook Account” button, just click the button to
-start authorizing.</p>
+<p>First of all, you need to authorize “Client OAuth” of your developeraccount to UPLTV.</p>
+<p>When using this feature at the first time, you will find an “Authorize Facebook Account” button, just click the button to start authorizing.</p>
 <div class="section" id="step1-provide-the-app-id-and-app-secret-of-an-app-in-your-facebook-develoer-account">
 <h3>Step1 - Provide the <strong>App ID</strong> and <strong>App Secret</strong> of an App in your Facebook develoer account.<a class="headerlink" href="#step1-provide-the-app-id-and-app-secret-of-an-app-in-your-facebook-develoer-account" title="Permalink to this headline">¶</a></h3>
-<p>Go to Facebook for Developers (<a class="reference external" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a>),
-select any App and click into its configuration page.</p>
-<p>Click into the “Settings - Basics” page in the left menu, you can easily
-find App ID and App Secret of this App in the top position.</p>
+<p>Go to Facebook for Developers (<a class="reference external" href="https://developers.facebook.com/apps/">https://developers.facebook.com/apps/</a>) ,select any App and click into its configuration page.</p>
+<p>Click into the “Settings - Basics” page in the left menu, you can easily find App ID and App Secret of this App in the top position.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/en_1.png"><img alt="picture 3" src="../_images/en_1.png" style="width: 1134.0px; height: 420.0px;" /></a>
 </div>
 </div>
 <div class="section" id="step2-set-the-link-provided-by-upltv-to-vaild-oauth-redirect-uris">
 <h3>Step2 - Set the link provided by UPLTV to <strong>“Vaild OAuth Redirect URIs”</strong>.<a class="headerlink" href="#step2-set-the-link-provided-by-upltv-to-vaild-oauth-redirect-uris" title="Permalink to this headline">¶</a></h3>
-<p>Copy the callback link provided by UPLTV, then go back to the same page
-on Facebook for Developers in the previous step. Click into the
-“Facebook Login - Settings” page in the left menu, find the input box of
-“Vaild OAuth Redirect URIs”, just paste the link copied from UPLTV into
-the box and save it.</p>
+<p>Copy the callback link provided by UPLTV, then go back to the same page on Facebook for Developers in the previous step.</p>
+<p>Click into the “Facebook Login - Settings” page in the left menu, find the input box of “Vaild OAuth Redirect URIs”, just paste the link copied from UPLTV into the box and save it.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/en_2.png"><img alt="picture 3" src="../_images/en_2.png" style="width: 1134.0px; height: 560.0px;" /></a>
 </div>
 </div>
 <div class="section" id="step3-click-the-jump-to-facebook-complete-the-authorization-button-complete-the-authorization-by-following-the-instructions-on-the-landing-page">
 <h3>Step3 - Click the “Jump to Facebook &amp; Complete the authorization” button, complete the authorization by following the instructions on the landing page.<a class="headerlink" href="#step3-click-the-jump-to-facebook-complete-the-authorization-button-complete-the-authorization-by-following-the-instructions-on-the-landing-page" title="Permalink to this headline">¶</a></h3>
-<p>When the authorization is completed, UPLTV will automatically obtain the
-Facebook Ad accounts that allowed to be accessed by the authorized
-developer account, and UPLTV will update the Ad accounts list regularly.
-Also, you can replace the authorized account with a new one, but please
-be cautions that all existing sync rules will be removed immediately.
-The authorized token may be invaild in some special circumstances. When
-it happens, you will find an “Re-authenticate” button. Please follow the
-guide to re-authorize.</p>
+<p>When the authorization is completed, UPLTV will automatically obtain the Facebook Ad accounts that allowed to be accessed by the authorized developer account, and UPLTV will update the Ad accounts list regularly.</p>
+<p>Also, you can replace the authorized account with a new one, but please be cautions that all existing sync rules will be removed immediately.</p>
+<p>The authorized token may be invaild in some special circumstances. When it happens, you will find an “Re-authenticate” button. Please follow the guide to re-authorize.</p>
 </div>
 </div>
 <div class="section" id="create-and-edit-sync-rules">
 <h2>Create and edit sync rules<a class="headerlink" href="#create-and-edit-sync-rules" title="Permalink to this headline">¶</a></h2>
-<p>Once you have completed account authorization process, you are ready to
-create a custom sync rule. You can sync the Seeds from any of your
-multiple Apps to any number of authorized Facebook Ad accounts.</p>
+<p>Once you have completed account authorization process, you are ready to create a custom sync rule.</p>
+<p>You can sync the Seeds from any of your multiple Apps to any number of authorized Facebook Ad accounts.</p>
 </div>
 <div class="section" id="some-notes-about-sync-mechanism">
 <h2>Some notes about sync mechanism<a class="headerlink" href="#some-notes-about-sync-mechanism" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li>Synced Seeds data will be grouped into different “Facebook Ad
-audiences” by Apps, the rule of naming the “audiences” :
-<strong>#piddataaccountID</strong>  pid : App ID in UPLTV  data : date of last
-sync as format “yyyymmdd”  accountID : Facebook Ad account ID</li>
-<li>UPLTV will update the “audiences” every day by adding new Seeds &amp;
-removing discared Seeds.</li>
-<li>The sync program starts at 1 o’clock (PST) every day, and will finish
-in 30 minutes.</li>
+<ol class="arabic">
+<li><p class="first">Synced Seeds data will be grouped into different “Facebook Ad audiences” by Apps, the rule of naming the “audiences” :<strong>#piddataaccountID</strong></p>
+<p>pid : App ID in UPLTV</p>
+<p>data : date of last sync as format “yyyymmdd”</p>
+<p>accountID : Facebook Ad account ID</p>
+</li>
+<li><p class="first">UPLTV will update the “audiences” every day by adding new Seeds &amp;
+removing discared Seeds.</p>
+</li>
+<li><p class="first">The sync program starts at 1 o’clock (PST) every day, and will finish
+in 30 minutes.</p>
+</li>
 </ol>
 </div>
 </div>
